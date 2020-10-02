@@ -1,0 +1,7 @@
+users
+ |
+items
+ |
+shopping - users(buyer)
+ |
+address
