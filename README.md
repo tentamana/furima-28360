@@ -26,14 +26,16 @@ Things you may want to cover:
 
 ## users テーブル
 
-| Column   | Type   | Options     |
-| -------- | ------ | ----------- |
-| name-kana   | string | null: false |
-| name-full   | string | null: false |
-| email       | string | null: false |
-| password    | string | null: false |
-| nickname    | string | null: false |
-| birthday    | string | null: false |
+| Column       | Type   | Options     |
+| --------     | ------ | ----------- |
+| sun-name     | string | null: false |
+| name         | string | null: false |
+| sun-name-kana| string | null: false |
+| name-kana    | string | null: false |
+| email        | string | null: false |
+| password     | string | null: false |
+| nickname     | string | null: false |
+| birthday     | string | null: false |
 
 
 ### Association
@@ -42,28 +44,28 @@ Things you may want to cover:
 
 ## items テーブル
 
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| name       | string | null: false |
-| category   | string | null: false |
-| price      | string | null: false |
-| user-name  | string | null: false |
-| status     | string | null: false |
-| burden     | string | null: false |
-| area       | string | null: false |
-| shipment   | string | null: false |
+| Column     | Type    | Options     |
+| ------     | ------  | ----------- |
+| name       | string  | null: false |
+| category_id| integer | null: false |
+| price      | string  | null: false |
+| user-name  | string  | null: false |
+| status_id  | integer | null: false |
+| burden_id  | integer | null: false |
+| area_id    | integer | null: false |
+| shipment_id| integer | null: false |
 
 ### Association
 
-- belongs_to :users
-- belongs_to :shopping
+- has_one :users
+- has_one :shopping
 
 ## shopping テーブル
 
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
+| Column  | Type       | Options                        |
+| ------  | ---------- | ------------------------------ |
 | user-id | references | null: false, foreign_key: true |
-| items-id | references | null: false, foreign_key: true |
+| items-id| references | null: false, foreign_key: true |
 
 ### Association
 
@@ -73,14 +75,14 @@ Things you may want to cover:
 
 ## address テーブル
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| postal-code | string     |                                |
-| prefecture| string     |                                |
-| municipality | string     |                                |
-| address | string     |                                |
-| building| string     |                                |
-| telephone | string     |                                |
+| Column      | Type       | Options       |
+| -------     | ---------- | ------------- |
+| postal-code | string     | null: false   |
+| prefecture  | string     | null: false   |
+| municipality| string     | null: false   |
+| address     | string     | null: false   |
+| building    | string     | null: false   |
+| telephone   | string     | null: false   |
 
 
 ### Association
