@@ -28,9 +28,13 @@ Things you may want to cover:
 
 | Column   | Type   | Options     |
 | -------- | ------ | ----------- |
-| name     | string | null: false |
-| email    | string | null: false |
-| password | string | null: false |
+| name-kana   | string | null: false |
+| name-full   | string | null: false |
+| email       | string | null: false |
+| password    | string | null: false |
+| nickname    | string | null: false |
+| birthday    | string | null: false |
+
 
 ### Association
 
@@ -44,6 +48,10 @@ Things you may want to cover:
 | category   | string | null: false |
 | price      | string | null: false |
 | user-name  | string | null: false |
+| status     | string | null: false |
+| burden     | string | null: false |
+| area       | string | null: false |
+| shipment   | string | null: false |
 
 ### Association
 
@@ -67,7 +75,13 @@ Things you may want to cover:
 
 | Column  | Type       | Options                        |
 | ------- | ---------- | ------------------------------ |
+| postal-code | string     |                                |
+| prefecture| string     |                                |
+| municipality | string     |                                |
 | address | string     |                                |
+| building| string     |                                |
+| telephone | string     |                                |
+
 
 ### Association
 - belongs_to :shopping
