@@ -41,7 +41,7 @@ Things you may want to cover:
 ### Association
 
 - has_many :items
-- has_many :shopping 
+- has_many :shoppings 
 
 ## items テーブル
 
@@ -49,7 +49,7 @@ Things you may want to cover:
 | ______     | ________ | ___________ |
 | name       | string  | null: false |
 | category_id| integer | null: false |
-| price      | string  | null: false |
+| price      | integer  | null: false |
 | user       | references  | null: false, foreign_key: true |
 | description| string | null: false |
 | status_id  | integer | null: false |
@@ -60,14 +60,14 @@ Things you may want to cover:
 ### Association
 
 - belongs_to :user
-- belongs_to :shopping
+- has_one :shopping
 
-## shopping テーブル
+## shoppings テーブル
 
 | Column  | Type       | Options                        |
 | ______  | __________ | ______________________________ |
 | user | references | null: false, foreign_key: true |
-| items| references | null: false, foreign_key: true |
+| item| references | null: false, foreign_key: true |
 
 ### Association
 
@@ -75,16 +75,17 @@ Things you may want to cover:
 - has_one :address
 - belongs_to :user
 
-## address テーブル
+## addresses テーブル
 
 | Column      | Type       | Options       |
 | ＿＿＿＿＿＿  | ＿＿＿＿＿   |  ＿＿＿＿＿_   |
-| postal_code | reference     | null: false, foreign_key: true  |
-| prefecture  | reference     | null: false, foreign_key: true   |
-| municipality| string        | null: false   |
-| address     | reference     | null: false, foreign_key: true   |
-| building    | reference     | foreign_key: true               |
-| telephone   | reference     | null: false, foreign_key: true   |
+| postal_code | integer     | null: false|
+| prefecture  | integer     | null: false |
+| municipality| string      | null: false   |
+| address     | string      | null: false  |
+| building    | string      | null: false  |
+| telephone   | string      | null: false |
+| shopping    | references   | null: false, foreign_key: true|
 
 
 ### Association
