@@ -47,7 +47,7 @@ Things you may want to cover:
 
 | Column     | Type    | Options     |
 | ______     | ________ | ___________ |
-| name       | string  | null: false |
+| item_name  | string  | null: false |
 | category_id| integer | null: false |
 | price      | integer  | null: false |
 | user       | references  | null: false, foreign_key: true |
@@ -79,11 +79,11 @@ Things you may want to cover:
 
 | Column      | Type       | Options       |
 | ＿＿＿＿＿＿  | ＿＿＿＿＿   |  ＿＿＿＿＿_   |
-| postal_code | integer     | null: false|
+| postal_code | string     | null: false|
 | prefecture  | integer     | null: false |
 | municipality| string      | null: false   |
 | address     | string      | null: false  |
-| building    | string      | null: false  |
+| building    | string      |  |
 | telephone   | string      | null: false |
 | shopping    | references   | null: false, foreign_key: true|
 
