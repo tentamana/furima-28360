@@ -326,3 +326,432 @@ Completed 200 OK in 38252ms (Views: 38015.0ms | ActiveRecord: 35.3ms | Allocatio
 Completed 200 OK in 36494ms (Views: 36490.8ms | ActiveRecord: 0.0ms | Allocations: 2468796)
 
 
+Started GET "/users/sign_up" for ::1 at 2020-10-05 16:10:34 +0900
+  [1m[35m (31.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 2932.1ms | Allocations: 1201271)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3578.5ms | Allocations: 1367139)
+Completed 500 Internal Server Error in 3615ms (ActiveRecord: 0.0ms | Allocations: 1378892)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `モデル名' for #<#<Class:0x00007f9c4dccbd48>:0x00007f9c4dcc8c38>):
+    1: <%= render "shared/second-header"%>
+    2: 
+    3: <%# 「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    4: <%= form_with model: モデル名, url: 新規登録機能へのパス, class: 'registration-main', local: true do |f| %>
+    5: <%# //「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    6: <div class='form-wrap'>
+    7:   <div class='form-header'>
+  
+app/views/devise/registrations/new.html.erb:4
+Started GET "/users/sign_up" for ::1 at 2020-10-05 16:13:23 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 18.9ms | Allocations: 703)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 757.2ms | Allocations: 165564)
+Completed 500 Internal Server Error in 776ms (ActiveRecord: 0.0ms | Allocations: 166375)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `モデル名' for #<#<Class:0x00007f9c4dccbd48>:0x00007f9c4a5304b0>):
+    1: <%= render "shared/second-header"%>
+    2: 
+    3: <%# 「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    4: <%= form_with model: モデル名, url: 新規登録機能へのパス, class: 'registration-main', local: true do |f| %>
+    5: <%# //「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    6: <div class='form-wrap'>
+    7:   <div class='form-header'>
+  
+app/views/devise/registrations/new.html.erb:4
+Started GET "/users/sign_up" for ::1 at 2020-10-05 16:28:16 +0900
+  [1m[35m (8.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 6.8ms | Allocations: 692)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 553.1ms | Allocations: 165533)
+Completed 500 Internal Server Error in 588ms (ActiveRecord: 0.0ms | Allocations: 175821)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `モデル名' for #<#<Class:0x00007f9c5190b8a8>:0x00007f9c51909e90>):
+    1: <%= render "shared/second-header"%>
+    2: 
+    3: <%# 「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    4: <%= form_with model: モデル名, url: 新規登録機能へのパス, class: 'registration-main', local: true do |f| %>
+    5: <%# //「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    6: <div class='form-wrap'>
+    7:   <div class='form-header'>
+  
+app/views/devise/registrations/new.html.erb:4
+Started GET "/users/sign_up" for ::1 at 2020-10-05 18:20:57 +0900
+  [1m[35m (39.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 3211.1ms | Allocations: 1409570)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3677.3ms | Allocations: 1572823)
+Completed 500 Internal Server Error in 3788ms (ActiveRecord: 32.5ms | Allocations: 1585767)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_registration' for #<#<Class:0x00007fabf7819d90>:0x00007fabf7814458>
+Did you mean?  user_registration_url
+               user_registration_path):
+    1: <%= render "shared/second-header"%>
+    2: 
+    3: <%# 「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    4: <%= form_with model: @user, url: user_registration, class: 'registration-main', local: true do |f| %>
+    5: <%# //「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    6: <div class='form-wrap'>
+    7:   <div class='form-header'>
+  
+app/views/devise/registrations/new.html.erb:4
+Started GET "/users/sign_up" for ::1 at 2020-10-05 18:22:03 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 3.7ms | Allocations: 705)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 425.9ms | Allocations: 162762)
+Completed 500 Internal Server Error in 429ms (ActiveRecord: 0.0ms | Allocations: 163582)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_registration' for #<#<Class:0x00007fabf7819d90>:0x00007fabf5b6ca30>
+Did you mean?  user_registration_url
+               user_registration_path):
+    1: <%= render "shared/second-header"%>
+    2: 
+    3: <%# 「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    4: <%= form_with model: @user, url: user_registration, class: 'registration-main', local: true do |f| %>
+    5: <%# //「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+    6: <div class='form-wrap'>
+    7:   <div class='form-header'>
+  
+app/views/devise/registrations/new.html.erb:4
+Started GET "/users/sign_up" for ::1 at 2020-10-05 18:22:37 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 9.9ms | Allocations: 798)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 455.1ms | Allocations: 166256)
+Completed 500 Internal Server Error in 465ms (ActiveRecord: 0.0ms | Allocations: 168257)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `confirmation' for #<#<Class:0x00007fabfa08a220>:0x00007fabfa091f98>):
+    41:       <label class="form-text">パスワード(確認)</label>
+    42:       <span class="indispensable">必須</span>
+    43:     </div>
+    44:     <%= f.password_field :password-confirmation, class:"input-default", id:"password-confirmation", placeholder:"同じパスワードを入力して下さい" %>
+    45:   </div>
+    46:   <div class="form-group">
+    47:     <p class='form-info-header'>
+  
+app/views/devise/registrations/new.html.erb:44
+app/views/devise/registrations/new.html.erb:4
+Started GET "/users/sign_up" for ::1 at 2020-10-05 18:24:06 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 8.7ms | Allocations: 796)
+  Rendered shared/_second-footer.html.erb (Duration: 3.5ms | Allocations: 432)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 79.1ms | Allocations: 9073)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 369ms (Views: 366.6ms | ActiveRecord: 0.0ms | Allocations: 32749)
+
+
+Started POST "/users" for ::1 at 2020-10-05 18:25:36 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"JspIivjUgyYYsyRX2LMa2OtucbOOZvviYcNgSneKZwFlLtM0/3LUwqqlTJ8pmR/3rxYWzwSrPq1QXY/2GXLr7g==", "user"=>{"nickname"=>"furima太郎", "email"=>"0gs241027262d6s@ezweb.ne.jp", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"山田", "name"=>"太郎", "last_name_kana"=>"ヤマダ", "name_kana"=>"タロウ", "hoge(1i)"=>"1930", "hoge(2i)"=>"1", "hoge(3i)"=>"1"}, "commit"=>"会員登録"}
+[31mUnpermitted parameters: :hoge(1i), :hoge(2i), :hoge(3i)[0m
+  [1m[35m (14.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (17.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY '0gs241027262d6s@ezweb.ne.jp' LIMIT 1[0m
+  [1m[36mUser Create (14.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `last_name`, `name_kana`, `last_name_kana`, `nickname`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('太郎', '山田', 'タロウ', 'ヤマダ', 'furima太郎', '0gs241027262d6s@ezweb.ne.jp', '$2a$12$9bRg6Z.VGB7dVySOORaHD.oajKTugOmGrxPGLIqlpfslzHLN6caR6', '2020-10-05 09:25:37.024671', '2020-10-05 09:25:37.024671')[0m
+  [1m[35m (16.9ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 468ms (ActiveRecord: 63.5ms | Allocations: 9829)
+
+
+  
+ActiveRecord::NotNullViolation (Mysql2::Error: Field 'birthday' doesn't have a default value):
+  
+mysql2 (0.5.3) lib/mysql2/client.rb:131:in `_query'
+mysql2 (0.5.3) lib/mysql2/client.rb:131:in `block in query'
+mysql2 (0.5.3) lib/mysql2/client.rb:130:in `handle_interrupt'
+mysql2 (0.5.3) lib/mysql2/client.rb:130:in `query'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:201:in `block (2 levels) in execute'
+activesupport (6.0.3.3) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (6.0.3.3) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (6.0.3.3) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:200:in `block in execute'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract_adapter.rb:722:in `block (2 levels) in log'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract_adapter.rb:721:in `block in log'
+activesupport (6.0.3.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract_adapter.rb:712:in `log'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:199:in `execute'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/mysql/database_statements.rb:41:in `execute'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:210:in `execute_and_free'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/mysql/database_statements.rb:46:in `exec_query'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/database_statements.rb:135:in `exec_insert'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/database_statements.rb:166:in `insert'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/query_cache.rb:22:in `insert'
+activerecord (6.0.3.3) lib/active_record/persistence.rb:375:in `_insert_record'
+activerecord (6.0.3.3) lib/active_record/persistence.rb:932:in `_create_record'
+activerecord (6.0.3.3) lib/active_record/counter_cache.rb:166:in `_create_record'
+activerecord (6.0.3.3) lib/active_record/locking/optimistic.rb:70:in `_create_record'
+activerecord (6.0.3.3) lib/active_record/attribute_methods/dirty.rb:211:in `_create_record'
+activerecord (6.0.3.3) lib/active_record/callbacks.rb:331:in `block in _create_record'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:825:in `_run_create_callbacks'
+activerecord (6.0.3.3) lib/active_record/callbacks.rb:331:in `_create_record'
+activerecord (6.0.3.3) lib/active_record/timestamp.rb:110:in `_create_record'
+activerecord (6.0.3.3) lib/active_record/persistence.rb:905:in `create_or_update'
+activerecord (6.0.3.3) lib/active_record/callbacks.rb:327:in `block in create_or_update'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:825:in `_run_save_callbacks'
+activerecord (6.0.3.3) lib/active_record/callbacks.rb:327:in `create_or_update'
+activerecord (6.0.3.3) lib/active_record/timestamp.rb:128:in `create_or_update'
+activerecord (6.0.3.3) lib/active_record/persistence.rb:470:in `save'
+activerecord (6.0.3.3) lib/active_record/validations.rb:47:in `save'
+activerecord (6.0.3.3) lib/active_record/transactions.rb:314:in `block in save'
+activerecord (6.0.3.3) lib/active_record/transactions.rb:375:in `block in with_transaction_returning_status'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/database_statements.rb:280:in `block in transaction'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/transaction.rb:280:in `block in within_new_transaction'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (6.0.3.3) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/transaction.rb:278:in `within_new_transaction'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/database_statements.rb:280:in `transaction'
+activerecord (6.0.3.3) lib/active_record/transactions.rb:212:in `transaction'
+activerecord (6.0.3.3) lib/active_record/transactions.rb:366:in `with_transaction_returning_status'
+activerecord (6.0.3.3) lib/active_record/transactions.rb:314:in `save'
+activerecord (6.0.3.3) lib/active_record/suppressor.rb:44:in `save'
+devise (4.7.3) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (6.0.3.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.3) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.3) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.3) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.3) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.3) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.3) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (6.0.3.3) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-10-05 18:28:07 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"JspIivjUgyYYsyRX2LMa2OtucbOOZvviYcNgSneKZwFlLtM0/3LUwqqlTJ8pmR/3rxYWzwSrPq1QXY/2GXLr7g==", "user"=>{"nickname"=>"furima太郎", "email"=>"0gs241027262d6s@ezweb.ne.jp", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"山田", "name"=>"太郎", "last_name_kana"=>"ヤマダ", "name_kana"=>"タロウ", "hoge(1i)"=>"1930", "hoge(2i)"=>"1", "hoge(3i)"=>"1"}, "commit"=>"会員登録"}
+[31mUnpermitted parameters: :hoge(1i), :hoge(2i), :hoge(3i)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY '0gs241027262d6s@ezweb.ne.jp' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 21.8ms | Allocations: 795)
+  Rendered shared/_second-footer.html.erb (Duration: 3.4ms | Allocations: 427)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 47.2ms | Allocations: 4963)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 560ms (Views: 184.1ms | ActiveRecord: 1.7ms | Allocations: 30827)
+
+
+Started POST "/users" for ::1 at 2020-10-05 18:28:36 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"zlG3bvmLJybT9ViQQv08juIAKD0Rp6ktZqTpMCOUTbWNtSzQ/i1wwmHjMFiz1zmhpnhPQZtqbGJXOgaMTWzBWg==", "user"=>{"nickname"=>"furima太郎", "email"=>"0gs241027262d6s@ezweb.ne.jp", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"山田", "name"=>"太郎", "last_name_kana"=>"ヤマダ", "name_kana"=>"タロウ", "birthday(1i)"=>"1930", "birthday(2i)"=>"1", "birthday(3i)"=>"1"}, "commit"=>"会員登録"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY '0gs241027262d6s@ezweb.ne.jp' LIMIT 1[0m
+  [1m[36mUser Create (38.6ms)[0m  [1m[32mINSERT INTO `users` (`name`, `last_name`, `name_kana`, `last_name_kana`, `nickname`, `birthday`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('太郎', '山田', 'タロウ', 'ヤマダ', 'furima太郎', '1930-01-01', '0gs241027262d6s@ezweb.ne.jp', '$2a$12$yEDkusZ4FdZceUwLf7vJYe8DA6QxpzwqVGByjwbiv4z8ZdFrnlbTm', '2020-10-05 09:28:36.503799', '2020-10-05 09:28:36.503799')[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 362ms (ActiveRecord: 44.5ms | Allocations: 7697)
+
+
+Started GET "/" for ::1 at 2020-10-05 18:28:36 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.1ms | Allocations: 194)
+Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 1160)
+
+
+Started GET "/users" for ::1 at 2020-10-05 18:52:07 +0900
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-10-05 18:52:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-10-05 18:52:17 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-10-05 18:52:32 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 39.5ms | Allocations: 184)
+Completed 200 OK in 49ms (Views: 42.7ms | ActiveRecord: 0.0ms | Allocations: 1086)
+
+
+Started GET "/" for ::1 at 2020-10-05 18:52:58 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 7)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 599)
+
+
