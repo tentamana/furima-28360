@@ -48,6 +48,7 @@ Things you may want to cover:
 | Column     | Type    | Options     |
 | ______     | ________ | ___________ |
 | item_name  | string  | null: false |
+| item_image | text  | null: false |
 | category_id| integer | null: false |
 | price      | integer  | null: false |
 | user       | references  | null: false, foreign_key: true |
