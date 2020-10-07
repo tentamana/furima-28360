@@ -829,3 +829,422 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 2819ms (Views: 2710.5ms | ActiveRecord: 45.1ms | Allocations: 1471069)
 
 
+Started GET "/" for ::1 at 2020-10-05 21:50:00 +0900
+  [1m[35m (58.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (32.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 61.6ms | Allocations: 1694)
+  Rendered shared/_footer.html.erb (Duration: 11.8ms | Allocations: 1481)
+  Rendered items/index.html.erb within layouts/application (Duration: 193.3ms | Allocations: 10826)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 941ms (Views: 850.4ms | ActiveRecord: 32.8ms | Allocations: 31388)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:52:00 +0900
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 44.2ms | Allocations: 1685)
+  Rendered shared/_footer.html.erb (Duration: 15.9ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 178.7ms | Allocations: 10834)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 507ms (Views: 466.6ms | ActiveRecord: 3.8ms | Allocations: 31268)
+
+
+Started DELETE "/" for ::1 at 2020-10-05 21:52:13 +0900
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/" for ::1 at 2020-10-05 21:54:37 +0900
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-10-05 21:54:47 +0900
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 28.2ms | Allocations: 1728)
+  Rendered shared/_footer.html.erb (Duration: 9.6ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 102.1ms | Allocations: 10872)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 329ms (Views: 316.3ms | ActiveRecord: 1.9ms | Allocations: 31355)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-10-05 21:54:59 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Mjb/qZuDtcbprLzKKbGElcgzppw4HfosYwwvSvKbb0lx0mQXnCXiIlu61ALYm4G6jEvB4LLQP2NSksD2nGPjpg=="}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 96ms (ActiveRecord: 1.1ms | Allocations: 5129)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:55:00 +0900
+Processing by ItemsController#index as HTML
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms | Allocations: 452)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-05 21:55:00 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 9.4ms | Allocations: 800)
+  Rendered shared/_second-footer.html.erb (Duration: 3.9ms | Allocations: 432)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 57.0ms | Allocations: 3802)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 135ms (Views: 133.2ms | ActiveRecord: 0.0ms | Allocations: 22976)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:55:07 +0900
+Processing by ItemsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 436)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-05 21:55:07 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 2.9ms | Allocations: 691)
+  Rendered shared/_second-footer.html.erb (Duration: 1.6ms | Allocations: 311)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2407)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 172ms (Views: 169.3ms | ActiveRecord: 0.0ms | Allocations: 20561)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:55:26 +0900
+Processing by ItemsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 448)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-05 21:55:26 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 14.6ms | Allocations: 690)
+  Rendered shared/_second-footer.html.erb (Duration: 0.5ms | Allocations: 311)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.5ms | Allocations: 2398)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 263ms (Views: 261.3ms | ActiveRecord: 0.0ms | Allocations: 20514)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:57:10 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 37.9ms | Allocations: 1387)
+  Rendered shared/_footer.html.erb (Duration: 7.4ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 145.2ms | Allocations: 8643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 419ms (Views: 408.3ms | ActiveRecord: 0.0ms | Allocations: 27424)
+
+
+Started GET "/" for ::1 at 2020-10-05 22:00:07 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 34.3ms | Allocations: 1377)
+  Rendered shared/_footer.html.erb (Duration: 6.3ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 84.0ms | Allocations: 8632)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 252ms (Views: 234.6ms | ActiveRecord: 0.0ms | Allocations: 26566)
+
+
+Started GET "/" for ::1 at 2020-10-05 22:02:21 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 59.2ms | Allocations: 1766)
+  Rendered shared/_footer.html.erb (Duration: 11.6ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 142.6ms | Allocations: 10914)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1230ms (Views: 1212.4ms | ActiveRecord: 0.0ms | Allocations: 29861)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-10-05 22:02:25 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 8.3ms | Allocations: 796)
+  Rendered shared/_error_messages.html.erb (Duration: 3.2ms | Allocations: 183)
+  Rendered shared/_second-footer.html.erb (Duration: 2.8ms | Allocations: 427)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 43.3ms | Allocations: 5711)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 257ms (Views: 85.3ms | ActiveRecord: 127.8ms | Allocations: 34638)
+
+
+Started GET "/" for ::1 at 2020-10-06 12:51:16 +0900
+  
+SyntaxError (/Users/nobatentamasai/projects/furima-28360/app/models/user.rb:10: invalid character property name {katakana, Hiragana, 一-龠々}: /\A[\p{katakana, Hiragana, 一-龠々}\p{blank}ー－]+\z/
+/Users/nobatentamasai/projects/furima-28360/app/models/user.rb:11: invalid character property name {katakana, Hiragana, 一-龠々}: /\A[\p{katakana, Hiragana, 一-龠々}\p{blank}ー－]+\z/):
+  
+app/models/user.rb:10: invalid character property name {katakana, Hiragana, 一-龠々}: /\A[\p{katakana, Hiragana, 一-龠々}\p{blank}ー－]+\z/
+app/models/user.rb:11: invalid character property name {katakana, Hiragana, 一-龠々}: /\A[\p{katakana, Hiragana, 一-龠々}\p{blank}ー－]+\z/
+app/models/user.rb:10: invalid character property name {katakana, Hiragana, 一-龠々}: /\A[\p{katakana, Hiragana, 一-龠々}\p{blank}ー－]+\z/
+app/models/user.rb:11: invalid character property name {katakana, Hiragana, 一-龠々}: /\A[\p{katakana, Hiragana, 一-龠々}\p{blank}ー－]+\z/
+app/models/user.rb:10: invalid character property name {katakana, Hiragana, 一-龠々}: /\A[\p{katakana, Hiragana, 一-龠々}\p{blank}ー－]+\z/
+app/models/user.rb:11: invalid character property name {katakana, Hiragana, 一-龠々}: /\A[\p{katakana, Hiragana, 一-龠々}\p{blank}ー－]+\z/
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-10-06 12:52:52 +0900
+  
+ArgumentError (You need to supply at least one validation):
+  
+app/models/user.rb:16:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-10-06 12:53:18 +0900
+  [1m[35m (58.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 28.6ms | Allocations: 1423)
+  Rendered shared/_footer.html.erb (Duration: 3.7ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 84.5ms | Allocations: 8679)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 272ms (Views: 236.3ms | ActiveRecord: 0.0ms | Allocations: 27496)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-06 12:53:28 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 3.9ms | Allocations: 691)
+  Rendered shared/_second-footer.html.erb (Duration: 0.6ms | Allocations: 311)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 21.8ms | Allocations: 3062)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 147ms (Views: 107.1ms | ActiveRecord: 0.0ms | Allocations: 31106)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-10-06 12:53:30 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"7XgfQOmw24vlo05nUy31mquGCGMMPEfV8DfE9HK2PyPt9A/DOoIwe6EHjZy+CFjl8gNM0mmf2qqlj4odJWrHJQ==", "hoge"=>"3QNrZpKCf2ZF6nr", "commit"=>"ログイン"}
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 613)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"7XgfQOmw24vlo05nUy31mquGCGMMPEfV8DfE9HK2PyPt9A/DOoIwe6EHjZy+CFjl8gNM0mmf2qqlj4odJWrHJQ==", "hoge"=>"3QNrZpKCf2ZF6nr", "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 4.3ms | Allocations: 690)
+  Rendered shared/_second-footer.html.erb (Duration: 0.4ms | Allocations: 311)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2390)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.0ms | Allocations: 20209)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-10-06 12:53:32 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"VLnqyFFIznyZU6JmKxwO2lCJCuB2A3m3I5WdJ3vuevbUFa5Va5jAm67GhSCGwtmiKzwWja/LHHrd/cR/WRIGVA==", "hoge"=>"3QNrZpKCf2ZF6nr", "commit"=>"ログイン"}
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 571)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"VLnqyFFIznyZU6JmKxwO2lCJCuB2A3m3I5WdJ3vuevbUFa5Va5jAm67GhSCGwtmiKzwWja/LHHrd/cR/WRIGVA==", "hoge"=>"3QNrZpKCf2ZF6nr", "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.4ms | Allocations: 690)
+  Rendered shared/_second-footer.html.erb (Duration: 1.2ms | Allocations: 311)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.4ms | Allocations: 2389)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms | Allocations: 20183)
+
+
+Started GET "/" for ::1 at 2020-10-06 12:54:11 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 10.5ms | Allocations: 1411)
+  Rendered shared/_footer.html.erb (Duration: 5.0ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 56.1ms | Allocations: 8666)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 169ms (Views: 166.0ms | ActiveRecord: 0.0ms | Allocations: 26596)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-10-06 12:54:13 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 4.6ms | Allocations: 691)
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 14)
+  Rendered shared/_second-footer.html.erb (Duration: 0.6ms | Allocations: 311)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.4ms | Allocations: 3948)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 0.0ms | Allocations: 22314)
+
+
+Started POST "/users" for ::1 at 2020-10-06 12:55:05 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"ccUoixms2qP1rer+glbuoOTCHOFL/qM/vByjypL+qB5eNxIY66jWCmbT73vMY3qq+4Z0q43FsknymaHyG7fSAA==", "user"=>{"nickname"=>"furima太郎", "email"=>"0gs241027262d6s@ezweb.ne.jp", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"123", "name"=>"456", "last_name_kana"=>"123", "name_kana"=>"456", "birthday(1i)"=>"1930", "birthday(2i)"=>"1", "birthday(3i)"=>"1"}, "commit"=>"会員登録"}
+  [1m[35m (24.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (22.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY '0gs241027262d6s@ezweb.ne.jp' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :email attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.3/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY '0gs241027262d6s@ezweb.ne.jp' LIMIT 1[0m
+  [1m[35m (11.7ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 8.4ms | Allocations: 690)
+  Rendered shared/_error_messages.html.erb (Duration: 2.8ms | Allocations: 1000)
+  Rendered shared/_second-footer.html.erb (Duration: 0.4ms | Allocations: 311)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.4ms | Allocations: 4945)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 635ms (Views: 118.9ms | ActiveRecord: 59.4ms | Allocations: 36979)
+
+
+Started POST "/users" for ::1 at 2020-10-06 12:56:02 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"bZ4zBhEGNdNcu/ixWAAIyUuOk/MIcgdb/F5qyK3++5btMnebK9Y7NGsu3/f13t+xMDuPntG6YpYCNjOQjwKHNA==", "user"=>{"nickname"=>"furima太郎", "email"=>"0gs241027262d6s@ezweb.ne.jp", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"山田", "name"=>"太郎", "last_name_kana"=>"ヤマダ", "name_kana"=>"タロウ", "birthday(1i)"=>"1930", "birthday(2i)"=>"1", "birthday(3i)"=>"1"}, "commit"=>"会員登録"}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY '0gs241027262d6s@ezweb.ne.jp' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :email attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.3/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY '0gs241027262d6s@ezweb.ne.jp' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 15.1ms | Allocations: 690)
+  Rendered shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 398)
+  Rendered shared/_second-footer.html.erb (Duration: 0.8ms | Allocations: 311)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 36.0ms | Allocations: 4335)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 704ms (Views: 249.2ms | ActiveRecord: 2.0ms | Allocations: 30838)
+
+
+Started POST "/users" for ::1 at 2020-10-06 12:56:49 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"fvuHor6to3HNGagpiWX5rYkGniAfCiKEuQWlBkCfhZf+V8M/hH2tlvqMj28kuy7V8rOCTcbCR0lHbfxeYmP5NQ==", "user"=>{"nickname"=>"furima太郎", "email"=>"spectra@ezweb.ne.jp", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"山田", "name"=>"太郎", "last_name_kana"=>"ヤマダ", "name_kana"=>"タロウ", "birthday(1i)"=>"1930", "birthday(2i)"=>"1", "birthday(3i)"=>"1"}, "commit"=>"会員登録"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (8.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'spectra@ezweb.ne.jp' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :email attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.3/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'spectra@ezweb.ne.jp' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 14.6ms | Allocations: 690)
+  Rendered shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 140)
+  Rendered shared/_second-footer.html.erb (Duration: 0.5ms | Allocations: 311)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 23.6ms | Allocations: 4077)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 549ms (Views: 144.3ms | ActiveRecord: 9.6ms | Allocations: 29995)
+
+
+Started POST "/users" for ::1 at 2020-10-06 12:57:26 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"aM7PvRkcQeUj+vRe0agJpZ4X2JVl3fLtcM5J6abDC7ToYosgI8xPAhRv0xh8dt7d5aLE+LwVlyCOphCxhD93Fg==", "user"=>{"nickname"=>"furima太郎", "email"=>"st5d7f@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"山田", "name"=>"太郎", "last_name_kana"=>"ヤマダ", "name_kana"=>"タロウ", "birthday(1i)"=>"1930", "birthday(2i)"=>"1", "birthday(3i)"=>"1"}, "commit"=>"会員登録"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (4.8ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'st5d7f@icloud.com' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :email attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.3/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mCACHE User Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'st5d7f@icloud.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 3.7ms | Allocations: 690)
+  Rendered shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 654)
+  Rendered shared/_second-footer.html.erb (Duration: 0.3ms | Allocations: 311)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4592)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 153ms (Views: 113.3ms | ActiveRecord: 5.3ms | Allocations: 31806)
+
+
+Started POST "/users" for ::1 at 2020-10-06 12:58:02 +0900
+  
+NameError (undefined local variable or method `＠' for #<Class:0x00007fe877772e48>):
+  
+app/models/user.rb:9:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/users" for ::1 at 2020-10-06 12:58:21 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"1n42sa8jGnvh8XqD9KmMJqIXY/BnaA2944YURJxWy2ZW0nIslfMUnNZkXcVZd1te2aJ/nb6gaHAd7k0cvqq3xA==", "user"=>{"nickname"=>"furima太郎", "email"=>"st5d7f@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"山田", "name"=>"太郎", "last_name_kana"=>"ヤマダ", "name_kana"=>"タロウ", "birthday(1i)"=>"1930", "birthday(2i)"=>"1", "birthday(3i)"=>"1"}, "commit"=>"会員登録"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'st5d7f@icloud.com' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :email attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.3/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'st5d7f@icloud.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 5.0ms | Allocations: 692)
+  Rendered shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered shared/_second-footer.html.erb (Duration: 0.3ms | Allocations: 311)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 4098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 534ms (Views: 115.9ms | ActiveRecord: 73.7ms | Allocations: 39895)
+
+
+Started POST "/users" for ::1 at 2020-10-06 12:58:52 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"vIK7cwI+44VvibSewITz8mAlRRnlcFmg4VGEJn1Flps8Lv/uOO7tYlgck9htWiSKG5BZdDy4PG0fOd1+X7nqOQ==", "user"=>{"nickname"=>"furima太郎", "email"=>"st5d7f@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"山田", "name"=>"太郎", "last_name_kana"=>"ヤマダ", "name_kana"=>"タロウ", "birthday(1i)"=>"1930", "birthday(2i)"=>"1", "birthday(3i)"=>"1"}, "commit"=>"会員登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'st5d7f@icloud.com' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :email attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/nobatentamasai/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.3/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'st5d7f@icloud.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 7.5ms | Allocations: 690)
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 140)
+  Rendered shared/_second-footer.html.erb (Duration: 0.4ms | Allocations: 311)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 4077)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 454ms (Views: 117.2ms | ActiveRecord: 3.2ms | Allocations: 29967)
+
+
+  [1m[35m (54.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (14.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (25.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (12.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'long@schmeler.info' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :email attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from irb_binding at (irb):1)
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'long@schmeler.info' LIMIT 1[0m
+  [1m[35m (17.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (7.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'bernardina@daugherty.co' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :email attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from irb_binding at (irb):1)
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'bernardina@daugherty.co' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (8.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (9.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mamie.christiansen@boyle-bartoletti.org' LIMIT 1[0m
+  [1m[36mUser Create (68.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `last_name`, `name_kana`, `last_name_kana`, `nickname`, `birthday`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('太郎', '山田', 'タロウ', 'ヤマダ', 'furima太郎', '1983-06-26', 'mamie.christiansen@boyle-bartoletti.org', '$2a$12$lzZ2M81TrSkRb7K3Twhgxuo9xBruThbu6ABiwWndPT8dP3TVNV/8q', '2020-10-06 06:45:54.378630', '2020-10-06 06:45:54.378630')[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
