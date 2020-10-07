@@ -1,6 +1,7 @@
 class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to_active_hash :status, :category, 
+  belongs_to_active_hash :status, :category, :burden, :area, :shipment
+  has_one_attached :item_image
 
    #空の投稿を保存できないようにする
    validates :item_image, :item_name, :price, :description, :status, :category, :burden, :area, :shipment presence: true
