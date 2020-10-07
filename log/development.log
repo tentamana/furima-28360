@@ -1248,3 +1248,41 @@ DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive 
   [1m[36mUser Exists? (9.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mamie.christiansen@boyle-bartoletti.org' LIMIT 1[0m
   [1m[36mUser Create (68.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `last_name`, `name_kana`, `last_name_kana`, `nickname`, `birthday`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('太郎', '山田', 'タロウ', 'ヤマダ', 'furima太郎', '1983-06-26', 'mamie.christiansen@boyle-bartoletti.org', '$2a$12$lzZ2M81TrSkRb7K3Twhgxuo9xBruThbu6ABiwWndPT8dP3TVNV/8q', '2020-10-06 06:45:54.378630', '2020-10-06 06:45:54.378630')[0m
   [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-10-07 12:20:58 +0900
+  [1m[35m (39.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 5110.7ms | Allocations: 1410784)
+  Rendered shared/_footer.html.erb (Duration: 7.4ms | Allocations: 1511)
+  Rendered items/index.html.erb within layouts/application (Duration: 5241.2ms | Allocations: 1420149)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5677ms (Views: 5647.7ms | ActiveRecord: 0.0ms | Allocations: 1442481)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-07 12:21:10 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 4.1ms | Allocations: 799)
+  Rendered shared/_second-footer.html.erb (Duration: 3.2ms | Allocations: 432)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.1ms | Allocations: 3864)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 181ms (Views: 79.5ms | ActiveRecord: 50.6ms | Allocations: 33258)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-10-07 12:21:12 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"nsa6Wq88U00HZLPV0kzpN+6joSFUjbhrRSMxW5zauEbLxJQyANV1xRUmN6WTHKrocl7nsUGf8aaV0FKqrJ/eNw==", "hoge"=>"3QNrZpKCf2ZF6nr", "commit"=>"ログイン"}
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 480)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"nsa6Wq88U00HZLPV0kzpN+6joSFUjbhrRSMxW5zauEbLxJQyANV1xRUmN6WTHKrocl7nsUGf8aaV0FKqrJ/eNw==", "hoge"=>"3QNrZpKCf2ZF6nr", "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 2.4ms | Allocations: 692)
+  Rendered shared/_second-footer.html.erb (Duration: 0.7ms | Allocations: 311)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2402)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 20236)
+
+

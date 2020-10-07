@@ -8,7 +8,6 @@ FactoryBot.define do
     email {"aa@gmail.com"}
     birthday {Faker::Date.birthday}
     password {"aa111111111"}
-    # password {password}
     password_confirmation {password}
   end
 end

@@ -6,7 +6,6 @@ class User < ApplicationRecord
 
          
         validates :nickname, presence: true
-        # validates :email, uniqueness: true, presence: true, inclusion: { in: ["@"] }
         validates :name, presence: true, format: { with: /\A[\p{katakana}, {Hiragana}, {一-龠々}\p{blank}ー－]+\z/}
         validates :last_name, presence: true, format: { with: /\A[\p{katakana}, {Hiragana}, {一-龠々}\p{blank}ー－]+\z/}
         validates :name_kana, presence: true, format: { with: /\A[\p{katakana}\p{blank}ー－]+\z/}

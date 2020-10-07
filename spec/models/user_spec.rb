@@ -33,13 +33,14 @@ RSpec.describe User, type: :model do
     describe '#ぜんかく' do
 
       it "nameが全角文字でないならば登録できない" do
-        @user = FactoryBot.build(:user, name: "abc")
+        @user.name = "abc"
         @user.valid?
         expect(@user.errors.full_messages).to include("Name is invalid")
       end
+
   
       it "last_nameが全角文字でないならば登録できない" do
-        @user = FactoryBot.build(:user, last_name: "abc")
+        @user.last_name = "abc"
         @user.valid?
         expect(@user.errors.full_messages).to include("Last name is invalid")
       end
@@ -65,13 +66,13 @@ RSpec.describe User, type: :model do
     describe '#ゼンカクカナ' do
 
       it "name_kanaが全角カナ文字であれば登録できること" do
-        @user = FactoryBot.build(:user, name_kana: "abc")
+        @user.name_kana = "abc"
         @user.valid?
         expect(@user.errors.full_messages).to include("Name kana is invalid")
       end
   
       it "last_name_kanaが全角カナ文字であれば登録できること" do
-        @user = FactoryBot.build(:user, last_name_kana: "abc")
+        @user.last_name_kana = "abc"
         @user.valid?
         expect(@user.errors.full_messages).to include("Last name kana is invalid")
       end
