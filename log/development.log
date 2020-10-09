@@ -2120,3 +2120,731 @@ Processing by ItemsController#new as HTML
 Completed 200 OK in 89ms (Views: 44.6ms | ActiveRecord: 24.9ms | Allocations: 34624)
 
 
+Started GET "/items/new" for ::1 at 2020-10-08 18:57:53 +0900
+  [1m[35m (49.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 28.4ms | Allocations: 6430)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.1
+Time: 3747ms
+Built at: 2020/10/08 18:58:06
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 11946ms (Views: 11859.0ms | ActiveRecord: 0.0ms | Allocations: 38247)
+
+
+Started POST "/items/new" for ::1 at 2020-10-08 18:58:16 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/items/new"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/items/new" for ::1 at 2020-10-08 20:27:51 +0900
+  [1m[35m (57.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [POST] "/items/new"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-10-08 20:29:20 +0900
+  [1m[35m (28.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (29.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:19
+  Rendered shared/_header.html.erb (Duration: 4466.8ms | Allocations: 1422020)
+  Rendered shared/_footer.html.erb (Duration: 6.2ms | Allocations: 1511)
+  Rendered items/index.html.erb within layouts/application (Duration: 4513.5ms | Allocations: 1431384)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2020-10-08 20:29:32 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (79.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:19
+  Rendered shared/_header.html.erb (Duration: 88.8ms | Allocations: 2311)
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 126.4ms | Allocations: 9567)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.1
+Time: 3515ms
+Built at: 2020/10/08 20:29:37
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 16782ms (Views: 16647.7ms | ActiveRecord: 65.1ms | Allocations: 1488341)
+
+
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.1
+Time: 1537ms
+Built at: 2020/10/08 20:29:39
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 6782ms (Views: 6699.1ms | ActiveRecord: 79.9ms | Allocations: 30803)
+
+
+Started GET "/items/new" for ::1 at 2020-10-08 20:29:46 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 64.7ms | Allocations: 7717)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 227ms (Views: 123.8ms | ActiveRecord: 43.5ms | Allocations: 34856)
+
+
+Started GET "/items/new" for ::1 at 2020-10-08 20:32:16 +0900
+  [1m[35m (9.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 3265.4ms | Allocations: 1418880)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3720ms (Views: 3561.7ms | ActiveRecord: 39.9ms | Allocations: 1454520)
+
+
+Started GET "/items/new" for ::1 at 2020-10-08 20:34:05 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 78.1ms | Allocations: 6033)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.1
+Time: 4000ms
+Built at: 2020/10/08 20:34:16
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 12067ms (Views: 12053.7ms | ActiveRecord: 0.0ms | Allocations: 24986)
+
+
+Started GET "/items/new" for ::1 at 2020-10-09 12:25:27 +0900
+  [1m[35m (104.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 500.4ms | Allocations: 6023)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.1
+Time: 4648ms
+Built at: 2020/10/09 12:25:42
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 14659ms (Views: 14616.0ms | ActiveRecord: 0.0ms | Allocations: 24950)
+
+
+Started GET "/items/new" for ::1 at 2020-10-09 12:26:24 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 281.2ms | Allocations: 6016)
+[Webpacker] Compiling...
+Started GET "/items/new" for ::1 at 2020-10-09 12:26:31 +0900
+  [1m[35m (7.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 48.6ms | Allocations: 6016)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 51820af50f6af4c44c7b
+Version: webpack 4.44.1
+Time: 4012ms
+Built at: 2020/10/09 12:26:40
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c239039c982fc68159ff.js    126 KiB  application  [emitted] [immutable]  application
+js/application-c239039c982fc68159ff.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c239039c982fc68159ff.js js/application-c239039c982fc68159ff.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.34 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 51820af50f6af4c44c7b
+Version: webpack 4.44.1
+Time: 4466ms
+Built at: 2020/10/09 12:26:40
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c239039c982fc68159ff.js    126 KiB  application  [emitted] [immutable]  application
+js/application-c239039c982fc68159ff.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c239039c982fc68159ff.js js/application-c239039c982fc68159ff.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.34 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 8636ms (Views: 8629.8ms | ActiveRecord: 0.0ms | Allocations: 25784)
+
+
+Completed 200 OK in 15709ms (Views: 15684.2ms | ActiveRecord: 0.0ms | Allocations: 52335)
+
+
+Started GET "/items/new" for ::1 at 2020-10-09 12:32:56 +0900
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 145.4ms | Allocations: 6017)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 565636cdc40344535e5e
+Version: webpack 4.44.1
+Time: 4029ms
+Built at: 2020/10/09 12:33:09
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ddd49843f6a60bd87961.js    126 KiB  application  [emitted] [immutable]  application
+js/application-ddd49843f6a60bd87961.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ddd49843f6a60bd87961.js js/application-ddd49843f6a60bd87961.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.4 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 12342ms (Views: 12302.1ms | ActiveRecord: 0.0ms | Allocations: 24921)
+
+
+Started GET "/items/new" for ::1 at 2020-10-09 12:37:02 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 148.8ms | Allocations: 6016)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 5605590b0bf74d55fad6
+Version: webpack 4.44.1
+Time: 4554ms
+Built at: 2020/10/09 12:37:15
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-183dd893f71ad5631837.js    126 KiB  application  [emitted] [immutable]  application
+js/application-183dd893f71ad5631837.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-183dd893f71ad5631837.js js/application-183dd893f71ad5631837.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.46 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 13460ms (Views: 13426.8ms | ActiveRecord: 0.0ms | Allocations: 24925)
+
+
+Started GET "/items/new" for ::1 at 2020-10-09 12:39:17 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 130.4ms | Allocations: 6022)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 9addbb7ef9eef6079ef0
+Version: webpack 4.44.1
+Time: 4972ms
+Built at: 2020/10/09 12:39:31
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f99e691593a996bcdf0c.js    126 KiB  application  [emitted] [immutable]  application
+js/application-f99e691593a996bcdf0c.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f99e691593a996bcdf0c.js js/application-f99e691593a996bcdf0c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.52 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 14341ms (Views: 14320.3ms | ActiveRecord: 0.0ms | Allocations: 24942)
+
+
+Started POST "/items/new" for ::1 at 2020-10-09 12:39:44 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/items/new"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items/new" for ::1 at 2020-10-09 16:38:27 +0900
+  [1m[35m (50.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 244.0ms | Allocations: 6019)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: ffdf711f33af7990ae61
+Version: webpack 4.44.1
+Time: 3647ms
+Built at: 2020/10/09 16:38:40
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e8115bb45d5a9393ff23.js    126 KiB  application  [emitted] [immutable]  application
+js/application-e8115bb45d5a9393ff23.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e8115bb45d5a9393ff23.js js/application-e8115bb45d5a9393ff23.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.64 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 12161ms (Views: 12111.8ms | ActiveRecord: 0.0ms | Allocations: 24936)
+
+
+Started GET "/items/new" for ::1 at 2020-10-09 16:42:57 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 148.4ms | Allocations: 6021)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: ebc9a36235d66d923eff
+Version: webpack 4.44.1
+Time: 5060ms
+Built at: 2020/10/09 16:43:11
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-661919f85f0a942ee3bf.js    126 KiB  application  [emitted] [immutable]  application
+js/application-661919f85f0a942ee3bf.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-661919f85f0a942ee3bf.js js/application-661919f85f0a942ee3bf.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.68 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 14491ms (Views: 14466.4ms | ActiveRecord: 0.0ms | Allocations: 24941)
+
+
+Started GET "/items/new" for ::1 at 2020-10-09 16:54:37 +0900
+  [1m[35m (13.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 226.9ms | Allocations: 6822)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: cf7dd3319a3fd8eb7732
+Version: webpack 4.44.1
+Time: 3718ms
+Built at: 2020/10/09 16:54:49
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a12912296eae17857a20.js    126 KiB  application  [emitted] [immutable]  application
+js/application-a12912296eae17857a20.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a12912296eae17857a20.js js/application-a12912296eae17857a20.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.86 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 11995ms (Views: 11939.1ms | ActiveRecord: 0.0ms | Allocations: 26734)
+
+
+Started GET "/items/items.js" for ::1 at 2020-10-09 16:54:49 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/items/items.js"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items/new" for ::1 at 2020-10-09 16:55:39 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 31.0ms | Allocations: 6028)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 38e4dfff1ea934fe278b
+Version: webpack 4.44.1
+Time: 3676ms
+Built at: 2020/10/09 16:55:50
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9f3fb40b52bc820b4062.js    126 KiB  application  [emitted] [immutable]  application
+js/application-9f3fb40b52bc820b4062.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9f3fb40b52bc820b4062.js js/application-9f3fb40b52bc820b4062.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.86 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 11591ms (Views: 11582.3ms | ActiveRecord: 0.0ms | Allocations: 24940)
+
+
+Started GET "/items/items.js" for ::1 at 2020-10-09 16:55:50 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/items/items.js"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items/new" for ::1 at 2020-10-09 16:57:07 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 36.9ms | Allocations: 6017)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: d95d689f599e146971ea
+Version: webpack 4.44.1
+Time: 3811ms
+Built at: 2020/10/09 16:57:19
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-599fda62108514d7e01d.js    126 KiB  application  [emitted] [immutable]  application
+js/application-599fda62108514d7e01d.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-599fda62108514d7e01d.js js/application-599fda62108514d7e01d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.83 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 11466ms (Views: 11458.1ms | ActiveRecord: 0.0ms | Allocations: 24917)
+
+
+Started GET "/items/items.js" for ::1 at 2020-10-09 16:57:19 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/items/items.js"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items/new" for ::1 at 2020-10-09 17:34:45 +0900
+  [1m[35m (36.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 125.1ms | Allocations: 6019)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: b1b0c1830df7ca3180bd
+Version: webpack 4.44.1
+Time: 4049ms
+Built at: 2020/10/09 17:34:58
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-fcd011eebe6b2cbb920f.js    126 KiB  application  [emitted] [immutable]  application
+js/application-fcd011eebe6b2cbb920f.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-fcd011eebe6b2cbb920f.js js/application-fcd011eebe6b2cbb920f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.85 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 12778ms (Views: 12706.2ms | ActiveRecord: 0.0ms | Allocations: 24936)
+
+
+Started GET "/items/items.js" for ::1 at 2020-10-09 17:34:58 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/items/items.js"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items/new" for ::1 at 2020-10-09 17:35:34 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 141.9ms | Allocations: 6822)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 422ms (Views: 386.5ms | ActiveRecord: 0.0ms | Allocations: 25584)
+
+
+Started GET "/items/new" for ::1 at 2020-10-09 17:36:16 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 129.4ms | Allocations: 6025)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 561181e5e3593c55e86f
+Version: webpack 4.44.1
+Time: 4689ms
+Built at: 2020/10/09 17:36:29
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3965cb9ebb1b67cdb3af.js    126 KiB  application  [emitted] [immutable]  application
+js/application-3965cb9ebb1b67cdb3af.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3965cb9ebb1b67cdb3af.js js/application-3965cb9ebb1b67cdb3af.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.85 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 13632ms (Views: 13616.1ms | ActiveRecord: 0.0ms | Allocations: 24952)
+
+
+Started GET "/items/new" for ::1 at 2020-10-09 17:37:02 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 79.7ms | Allocations: 6018)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 7dbb8d85fff810d01c68
+Version: webpack 4.44.1
+Time: 4042ms
+Built at: 2020/10/09 17:37:14
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6c04492bac6ae6a18d62.js    126 KiB  application  [emitted] [immutable]  application
+js/application-6c04492bac6ae6a18d62.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6c04492bac6ae6a18d62.js js/application-6c04492bac6ae6a18d62.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 1.85 KiB {application} [built]
+[./app/javascript/packs/application.js] 771 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 12588ms (Views: 12566.3ms | ActiveRecord: 0.0ms | Allocations: 24927)
+
+
