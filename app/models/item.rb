@@ -8,16 +8,27 @@ class Item < ApplicationRecord
   has_one_attached :image
   belongs_to :user
   
+  with_options presence: true do
+   validates :image 
+   validates :item_name
+   validates :description  
+   validates :price
+   validates :status_id
+   validates :category_id
+   validates :burden_id
+   validates :area_id
+   validates :shipment_id
+  end
 
-   validates :image, presence: true  
-   validates :item_name, presence: true
-   validates :description, presence: true  
-   validates :price, presence: true, numericality: { only_integer: true,greater_than: 299, less_than: 10000000}
-   validates :status_id, presence:true, numericality: { other_than: 1 }
-   validates :category_id, presence: true, numericality: { other_than: 1 } 
-   validates :burden_id, presence: true, numericality: { other_than: 1 } 
-   validates :area_id, presence: true, numericality: { other_than: 1 } 
-   validates :shipment_id, presence: true, numericality: { other_than: 1 } 
 
+  with_options numericality: {other_than: 1} do
+    validates :status_id
+    validates :category_id
+    validates :burden_id
+    validates :area_id
+    validates :shipment_id
+  end
 
+  validates :price, numericality: { only_integer: true, greater_than: 299, less_than: 10000000}
+  
 end

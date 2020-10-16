@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
 
     priceGet.addEventListener("input",function(){
       const price =  document.getElementById("item-price").value
-      // console.log(price)
+  
       const fee = price * 0.1
       const profit = (price - fee);
 
