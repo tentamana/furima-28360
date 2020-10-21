@@ -10,10 +10,10 @@
       <%= image_tag "item-sample.png", class: 'buy-item-img' %>
       <div class='buy-item-right-content'>
         <h2 class='buy-item-text'>
-          <%= "商品説明" %>
+          <%= @item.item_name %>
         </h2>
         <div class='buy-item-price'>
-          <p class='item-price-text'>¥<%= 999,999,999 %></p>
+          <p class='item-price-text'>¥<%= @item.price %></p>
           <p class='item-price-sub-text'>（税込）送料込み</p>
         </div>
       </div>
@@ -128,3 +128,14 @@
   </div>
 </div>
 <%= render "shared/second-footer"%>
+
+<%# ①商品情報
+@itemをorder#indexで定義
+あとは商品詳細と同じでいけそうです
+
+②カード情報
+今作成されているcard.jsの完成をまずは目指しましょう
+
+③住所系
+モデル・マイグレーションファイルを作成、反映させる
+name属性の変更（ユーザーとか商品出品と同様な形） %>
