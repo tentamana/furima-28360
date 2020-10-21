@@ -9957,3 +9957,80 @@ Processing by OrdersController#index as HTML
 Completed 200 OK in 154ms (Views: 148.0ms | ActiveRecord: 0.8ms | Allocations: 30683)
 
 
+Started GET "/items/8/orders" for ::1 at 2020-10-21 12:46:57 +0900
+Processing by OrdersController#index as HTML
+  Parameters: {"item_id"=>"8"}
+  [1m[36mItem Load (1.8ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/orders_controller.rb:4:in `index'
+  Rendering orders/index.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 24.0ms | Allocations: 795)
+  Rendered shared/_second-footer.html.erb (Duration: 3.7ms | Allocations: 427)
+  Rendered orders/index.html.erb within layouts/application (Duration: 94.0ms | Allocations: 9870)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 252ms (Views: 227.9ms | ActiveRecord: 1.8ms | Allocations: 30152)
+
+
+Started GET "/items/8/orders" for ::1 at 2020-10-21 13:03:21 +0900
+  [1m[35m (51.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by OrdersController#index as HTML
+  Parameters: {"item_id"=>"8"}
+  [1m[36mItem Load (45.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/orders_controller.rb:4:in `index'
+  Rendering orders/index.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 34.6ms | Allocations: 691)
+  Rendered shared/_second-footer.html.erb (Duration: 3.6ms | Allocations: 311)
+  Rendered orders/index.html.erb within layouts/application (Duration: 301.6ms | Allocations: 8446)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 784d44ca57c96ba06953
+Version: webpack 4.44.1
+Time: 3684ms
+Built at: 2020/10/21 13:03:33
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-21e81c5d59854a0b78a1.js   72.5 KiB  application  [emitted] [immutable]  application
+js/application-21e81c5d59854a0b78a1.js.map   81.7 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-21e81c5d59854a0b78a1.js js/application-21e81c5d59854a0b78a1.js.map
+[./app/javascript/card.js] 579 bytes {application} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 454 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+Completed 200 OK in 11863ms (Views: 11753.1ms | ActiveRecord: 45.2ms | Allocations: 28903)
+
+
+Started GET "/items/8/orders" for ::1 at 2020-10-21 13:09:19 +0900
+  [1m[35m (53.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by OrdersController#index as HTML
+  Parameters: {"item_id"=>"8"}
+  [1m[36mItem Load (35.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/orders_controller.rb:4:in `index'
+  Rendering orders/index.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 31.2ms | Allocations: 690)
+  Rendered shared/_second-footer.html.erb (Duration: 0.7ms | Allocations: 311)
+  Rendered orders/index.html.erb within layouts/application (Duration: 248.5ms | Allocations: 8441)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: ae68d96c71e8e87cc060
+Version: webpack 4.44.1
+Time: 3570ms
+Built at: 2020/10/21 13:09:31
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-57b6fd3ae370da0b32c7.js   72.6 KiB  application  [emitted] [immutable]  application
+js/application-57b6fd3ae370da0b32c7.js.map   81.8 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-57b6fd3ae370da0b32c7.js js/application-57b6fd3ae370da0b32c7.js.map
+[./app/javascript/card.js] 678 bytes {application} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 454 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+Completed 200 OK in 11798ms (Views: 11711.8ms | ActiveRecord: 35.2ms | Allocations: 28913)
+
+
