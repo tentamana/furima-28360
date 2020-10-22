@@ -10034,3 +10034,97 @@ Entrypoint application = js/application-57b6fd3ae370da0b32c7.js js/application-5
 Completed 200 OK in 11798ms (Views: 11711.8ms | ActiveRecord: 35.2ms | Allocations: 28913)
 
 
+Started GET "/items/8/orders" for ::1 at 2020-10-21 15:45:23 +0900
+  [1m[35m (61.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by OrdersController#index as HTML
+  Parameters: {"item_id"=>"8"}
+  [1m[36mItem Load (82.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/orders_controller.rb:4:in `index'
+  Rendering orders/index.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 17.1ms | Allocations: 691)
+  Rendered shared/_second-footer.html.erb (Duration: 3.9ms | Allocations: 311)
+  Rendered orders/index.html.erb within layouts/application (Duration: 128.7ms | Allocations: 8910)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nobatentamasai/projects/furima-28360/public/packs
+[Webpacker] Hash: 858b8d1da540509a15a2
+Version: webpack 4.44.1
+Time: 3590ms
+Built at: 2020/10/21 15:45:36
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6b5cb18018ba81d1183c.js   73.2 KiB  application  [emitted] [immutable]  application
+js/application-6b5cb18018ba81d1183c.js.map   82.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6b5cb18018ba81d1183c.js js/application-6b5cb18018ba81d1183c.js.map
+[./app/javascript/card.js] 1.25 KiB {application} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/items.js] 454 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+Completed 200 OK in 11743ms (Views: 11494.7ms | ActiveRecord: 82.5ms | Allocations: 41790)
+
+
+Started GET "/items/8/orders" for ::1 at 2020-10-21 15:46:53 +0900
+Processing by OrdersController#index as HTML
+  Parameters: {"item_id"=>"8"}
+  [1m[36mItem Load (13.0ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/orders_controller.rb:4:in `index'
+  Rendering orders/index.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 20.3ms | Allocations: 795)
+  Rendered shared/_second-footer.html.erb (Duration: 997.7ms | Allocations: 428)
+  Rendered orders/index.html.erb within layouts/application (Duration: 1084.1ms | Allocations: 9868)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1267ms (Views: 1227.7ms | ActiveRecord: 13.0ms | Allocations: 30166)
+
+
+  [1m[35m (41.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT GET_LOCK('493815722341103190', 0)[0m
+  [1m[35m (11.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAddresses (20201021105231)
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (131.6ms)[0m  [1m[35mCREATE TABLE `addresses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `postal_code` varchar(255) NOT NULL, `prefecture` int NOT NULL, `municipality` varchar(255) NOT NULL, `address` varchar(255) NOT NULL, `building` varchar(255), `telephone` varchar(255) NOT NULL, `order_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL,  INDEX `index_addresses_on_order_id`  (`order_id`), CONSTRAINT `fk_rails_27d0ce0437`
+FOREIGN KEY (`order_id`)
+  REFERENCES `orders` (`id`)
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (7.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201021105231')[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (26.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('493815722341103190')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (41.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('493815722341103190', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAddresses (20201021105231)
+  [1m[35m (103.0ms)[0m  [1m[35mDROP TABLE `addresses`[0m
+  [1m[36mprimary::SchemaMigration Destroy (19.0ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20201021105231'[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('493815722341103190')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT GET_LOCK('493815722341103190', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAddresses (20201021105231)
+  [1m[35m (23.5ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (107.3ms)[0m  [1m[35mCREATE TABLE `addresses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `postal_code` varchar(255) NOT NULL, `prefecture_id` int NOT NULL, `municipality` varchar(255) NOT NULL, `address` varchar(255) NOT NULL, `building` varchar(255), `telephone` varchar(255) NOT NULL, `order_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL,  INDEX `index_addresses_on_order_id`  (`order_id`), CONSTRAINT `fk_rails_27d0ce0437`
+FOREIGN KEY (`order_id`)
+  REFERENCES `orders` (`id`)
+)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (3.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201021105231')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (17.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('493815722341103190')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
