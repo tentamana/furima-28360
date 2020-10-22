@@ -2,14 +2,15 @@ class OrdersController < ApplicationController
   
   def index
     @item = Item.find(params[:item_id])
-    @order = Order.new
+    @user_order = UserOrder.new
   end
 
+
   def create
-    @order = Order.new(order_params)
-    if @order.valid?
+    @user_order = UserOrder.new(order_params)
+    if @user_order.valid?
       pay_item
-      @order.save
+      @user_order.save
       return redirect_to root_path
     else
       render 'index'
@@ -18,9 +19,13 @@ class OrdersController < ApplicationController
 
   private
 
-  def order_params
-    params.permit(:token)
+  
+
+  def order_address_params(user)
+    params.require(:user_order)permit(:token, :postal_code, :prefecture_id, :municipality, :address, :building, :telephone).merge(user_id: current_user.id)
   end
+
+  
 
   def pay_item
     Payjp.api_key = ENV["PAYJP_SECRET_KEY"]  # PAY.JPテスト秘密鍵
@@ -30,5 +35,6 @@ class OrdersController < ApplicationController
       currency:'jpy'                 # 通貨の種類(日本円)
     )
   end
+
 
 end
