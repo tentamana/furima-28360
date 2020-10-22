@@ -7,7 +7,8 @@ class OrdersController < ApplicationController
 
 
   def create
-    @user_order = UserOrder.new(order_params)
+    @item = Item.find(params[:item_id])
+    @user_order = UserOrder.new(order_address_params)
     if @user_order.valid?
       pay_item
       @user_order.save
@@ -17,12 +18,11 @@ class OrdersController < ApplicationController
     end
   end
 
-  private
 
-  
+  private 
 
-  def order_address_params(user)
-    params.require(:user_order)permit(:token, :postal_code, :prefecture_id, :municipality, :address, :building, :telephone).merge(user_id: current_user.id)
+  def order_address_params
+    params.permit(:token, :postal_code, :prefecture_id, :municipality, :address, :building, :telephone, :item_id).merge(user_id: current_user.id)
   end
 
   
@@ -30,8 +30,8 @@ class OrdersController < ApplicationController
   def pay_item
     Payjp.api_key = ENV["PAYJP_SECRET_KEY"]  # PAY.JPテスト秘密鍵
     Payjp::Charge.create(
-      amount: order_params[:price],  # 商品の値段
-      card: order_params[:token],    # カードトークン
+      amount: @item.price, # 商品の値段
+      card: order_address_params[:token],    # カードトークン
       currency:'jpy'                 # 通貨の種類(日本円)
     )
   end
