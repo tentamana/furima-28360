@@ -1,9 +1,10 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user!
   before_action :Item_find, only: [:index, :create ]
 
   def index
     @user_order = UserOrder.new
-    if user_signed_in? && current_user.id == @item.user_id
+    if current_user.id == @item.user_id || @item.order != nil
       redirect_to root_path
     end
   end
@@ -38,8 +39,9 @@ class OrdersController < ApplicationController
   end
 
   def Item_find
-    @item = Item.find(params[:id])
+    @item = Item.find(params[:item_id])
   end
 
 
 end
+

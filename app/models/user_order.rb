@@ -8,10 +8,10 @@ class UserOrder
           validates :municipality  
           validates :address
           validates :telephone
+          validates :token
          end
       
         
-        validates :token, presence: true
         validates :telephone, format: { with: /\A\d{11}\z/ }
         validates :prefecture_id, numericality: {other_than: 1}
         validates :postal_code, format: { with:/\A\d{3}[-]\d{4}\z/ }
