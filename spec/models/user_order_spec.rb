@@ -11,15 +11,18 @@ RSpec.describe UserOrder, type: :model do
       
     end
   
+    it 'すべての値が正しく入力されていれば保存できること' do
+      expect(@user_order).to be_valid
+    end
+    
+
     it "tokenが空では登録できないこと" do
       @user_order.token = nil
       @user_order.valid?
       expect(@user_order.errors.full_messages).to include("Token can't be blank")
     end
 
-    it 'すべての値が正しく入力されていれば保存できること' do
-      expect(@user_order).to be_valid
-    end
+    
 
     it 'postal_codeが空だと保存できないこと' do
       @user_order.postal_code = nil
@@ -32,10 +35,28 @@ RSpec.describe UserOrder, type: :model do
       expect(@user_order).to be_valid
     end
 
+    it 'postal_codeにハイフンが含まれないと保存できないこと' do
+      @user_order.postal_code = "1234567"
+      @user_order.valid?
+      expect(@user_order.errors.full_messages).to include("Postal code is invalid")
+    end
+
+    it 'prefecture_idが1だと保存できないこと' do
+      @user_order.prefecture_id = '1'
+      @user_order.valid?
+      expect(@user_order.errors.full_messages).to include("Prefecture must be other than 1")
+    end
+
     it 'prefecture_idが空だと保存できないこと' do
       @user_order.prefecture_id = nil
       @user_order.valid?
       expect(@user_order.errors.full_messages).to include("Prefecture can't be blank")
+    end
+
+    it "status_idが空では登録できないこと" do
+      @item.status_id = '1'
+      @item.valid?
+      expect(@item.errors.full_messages).to include("Status must be other than 1")
     end
 
     it 'municipalityが空だと保存できないこと' do

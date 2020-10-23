@@ -13,7 +13,8 @@ class UserOrder
         
         validates :token, presence: true
         validates :telephone, format: { with: /\A\d{11}\z/ }
-
+        validates :prefecture_id, numericality: {other_than: 1}
+        validates :postal_code, format: { with:/\A\d{3}[-]\d{4}\z/ }
 
         def save
           order = Order.create(item_id: item_id, user_id: user_id)
