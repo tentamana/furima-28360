@@ -12,6 +12,8 @@ class UserOrder
       
         
         validates :token, presence: true
+        validates :telephone, format: { with: /\A\d{11}\z/ }
+
 
         def save
           order = Order.create(item_id: item_id, user_id: user_id)
