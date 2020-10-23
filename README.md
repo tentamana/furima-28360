@@ -41,7 +41,7 @@ Things you may want to cover:
 ### Association
 
 - has_many :items
-- has_many :shoppings 
+- has_many :orders 
 
 ## items テーブル
 
@@ -61,9 +61,9 @@ Things you may want to cover:
 ### Association
 
 - belongs_to :user
-- has_one :shopping
+- has_one :orders
 
-## shoppings テーブル
+## orders テーブル
 
 | Column  | Type       | Options                        |
 | ______  | __________ | ______________________________ |
@@ -86,8 +86,8 @@ Things you may want to cover:
 | address     | string      | null: false  |
 | building    | string      |  |
 | telephone   | string      | null: false |
-| shopping    | references   | null: false, foreign_key: true|
+| order    | references   | null: false, foreign_key: true|
 
 
 ### Association
-- belongs_to :shopping
+- belongs_to :orders
