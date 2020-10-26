@@ -63,6 +63,7 @@ Things you may want to cover:
 - belongs_to :user
 - has_one :orders
 
+
 ## orders テーブル
 
 | Column  | Type       | Options                        |
